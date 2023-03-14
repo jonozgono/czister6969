@@ -48,17 +48,17 @@ def FizzBuzz():
     for i in range(1,101):
 
         if (i %3==0 and i %5==0):
-            print("FizzBuzz")
+            return("FizzBuzz")
             l+=1
         elif (i %3 ==0):
-            print("Fizz")
+            return("Fizz")
             l+=1
 
         elif (i %5 ==0):
-            print("Buzz")
+            return("Buzz")
 
-        else: print(i)
+        else: return(i)
 
     print("liczby podzilne przez 3 wystapily", l ,"razy")
 
-FizzBuzz()
+print(FizzBuzz())
