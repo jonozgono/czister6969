@@ -18,17 +18,19 @@ while True:
         for y in bazadanych:
             if y["imie"] == login:
                         print(y)
-            #else:
-                #print("!brak uzytkownika o podanym imieniu!")
+            elif y["imie"] != login:
+                print("!brak uzytkownika o podanym imieniu!")
 
    elif x=="3":
+       if len(bazadanych) == 0:
+           print("!brak uzytkownikow!")
        for y in bazadanych:
            print(y["imie"])
 
    elif x=="4":
+       print("!wychodze!")
        break
 
    else:
        print("!źle wprowadzone dane!")
-
 
